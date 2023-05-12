@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>饈WAKASHI</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="indexx.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+</head>
+
+<script>
+  setInterval("randomImg()",2000);//兩秒更新
+  function sequentialImg() {
+  var jsImg_len = jsImg.length;
+  var i = 0;
+  console.log(jsImg_len);
+  document.getElementById("cover").innerHTML  = "<img src='" + jsImg[i] + "' width=80%>";
+  if(i >= jsImg_len)
+      {
+          i = 0;
+      }
+  i++;
+  }
+</script>
+    
+
+
+    
+<body>
+ <!-- 頂端選單 -->
+ <nav>
+    <div class="search">
+        <img src="image/search.png" alt="">
+        <form action="#" method="post">
+            <input type="text" name="" placeholder="">
+        </form>
+    </div>
+    <ul>
+        <li><a href="brand.html">品牌介紹</a></li>
+        <li><a href="aboutus.html">關於我們</a></li>
+        <li><a href="index.html"><img src="image/logo.png" alt=""></a></li>
+        <li>
+            <div class="dropdown">
+                <a href="#">商品瀏覽</a>
+                <div class="dropdown-content">
+                <a href="#1">羊羹</a>
+                <a href="#2">大福/糰子</a>
+                <a href="#3">上生菓子</a>
+                <a href="#4">禮盒</a>
+                </div>
+            </div>
+        </li>
+        <li><a href="member.jsp">會員資料</a></li>
+       
+            <div class="login"><a href="login.html">登入</a></div>
+        
+    </ul>
+</nav>
+<!-- 首頁動態圖 文字 -->
+  <div>
+      <div id="cover" class="coverflow">
+        <a href='#'><img src="image/ran1.png" width="1680px" height="520px"></a>
+        <a href='#'><img src="image/ran2.png" width="1680px" height="520px"></a>
+        <a href='#'><img src="image/ran1.png" width="1680px" height="520px"></a>
+      </div>
+  </div>
+
+
+<!-- 
+<div class="picture">
+    <banner class="intro">
+        和菓子の一口は<br>
+        季節の移ろいを感じさせ<br>
+        since 2003
+    </banner>
+    <div id="image-fade-in">
+        <img src="image/ran1.png" height="570px">
+        
+</div> -->
+<br>    
+</div>
+
+<div class="chimi"><h1>---饈菓子---</h1></div>
+
+<!-- 最新資訊 -->
+<div class="news">
+    <div class="news1">
+        <div class="news2">
+            <h3>最新消息<br></h3>
+            <p>------------------------------------</p>
+            <b>
+                <p>『月兔禮盒』將於7/1晚上6點開放訂購</p>
+                <p>三週年優惠 全館5/9~6/18免運</p>
+                <p>客製化禮盒開放訂購中</p>
+            </b>
+        </div>
+    </div>
+</div>
+<!-- best兔 -->
+<div class="best">
+   <div class="best"><img src="image/best.png" alt=""> </div>
+       <div class="bigger">       
+            <div class="best1"><a href=""><div class="bestt1"><img src="image/best1.png"  height="350px" width="350px"></div></a></div> 
+            <div class="best2"><a href=""><div class="bestt2"><img src="image/best2.png"  height="350px" width="350px"></div></a></div>
+            <div class="best3"><a href=""><div class="bestt3"><img src="image/best3.png"  height="350px" width="350px"></div></a></div>
+            <div class="best4"><a href=""><div class="bestt4"><img src="image/best4.png"  height="350px" width="350px"></div></a></div>
+            <div class="best5"><a href=""><div class="bestt5"><img src="image/best5.png"  height="350px" width="350px"></div></a></div>
+       </div>
+   
+
+</div>
+<div class="clear"></div>
+<!-- 夫特 -->
+<footer>
+    Copyright © CYIM.
+   
+</footer>   
+
+
+    
+</body>
+</html>
