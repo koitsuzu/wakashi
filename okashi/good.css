@@ -125,8 +125,9 @@
 }
 .rating label:before {
     content: '★';
-    /* position: relative; */
-    display: block;
+    position: relative;
+    display: flex;
+    /* flex-direction: row; */
     font-size: 25px;
     color: gray;
     margin-right: 5px;
@@ -135,7 +136,8 @@
 .rating label:after {
     content: '★';
     position: absolute;
-    display: block;
+    display: flex;
+    flex-direction: row-reverse;
     font-size: 25px;
     color: rgb(243, 213, 114);
     top: 0;
@@ -190,4 +192,8 @@
     left: 100%;
     margin-left: -100px;
     z-index: 30;
+}
+.flower img{
+    width: 100px;
+    height: 100px;
 }
