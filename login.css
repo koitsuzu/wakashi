@@ -26,7 +26,9 @@
    color:#A39274;
    font-weight: bold;
 }
-
+.frame{
+    margin-top: 10%;
+}
 .fill input{
     padding: 10px;
     margin: 15px;
