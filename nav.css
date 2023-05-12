@@ -12,11 +12,6 @@ body {
     background-color: #FAFAFA;
 
 }
-/* 
-set {
-    margin-top: 20%;
-
-} */
 
 nav {
     width: 1600px;
@@ -30,7 +25,7 @@ nav {
     font-family: 'Shippori Mincho', serif;
 }
 .frame{
-    margin-top: 10%;
+    margin-top: 7%;
 }
 nav ul {
     margin: 0;
