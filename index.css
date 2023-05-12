@@ -12,11 +12,6 @@ body {
     background-color: #FAFAFA;
 }
 
-set {
-    margin-top: 20%;
-
-}
-
 nav {
     width: 1600px;
     display: flex;
