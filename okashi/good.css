@@ -43,12 +43,12 @@
   
 }
 .btn_font{
-    background-color: pink;
-    margin: 0 13px 0 0 ;
+    background-color: #de505d;
+    margin: 0 10px 0 0 ;
 }
 .btn{
     width: 50px;
-    background-color: pink;
+    background-color: #de505d;
     font-size: 45px;
     border: none;
     margin: 0;
@@ -57,8 +57,8 @@
 
 .qty{
     margin: 0;
-    width: 50px;
-    background-color: pink;
+    width: 80px;
+    background-color: #de505d;
     font-size: 45px;
     border: none;
     text-align: center;
@@ -69,7 +69,7 @@
     color: #fafafa;
     font-size: 25px;
     border: none;
-    padding: 13px;
+    padding: 13px 30px;
     margin: 0;
 }
 .g_write{
@@ -159,23 +159,35 @@
 }
 .g_comment{
     width: 480px;
+    height: 430px;
     /* margin: 10px; */
     padding: 30px ;
     margin-top: 40px;
-    border: solid;
+    border:solid;
     border-color: #A39274;
+    /* overflow: scroll; */
+
     /* background-color: beige; */
 }
 .g_comment h1{
     text-align: center;
     letter-spacing: 2px;
     font-size: 37px;
-    color:#A39274 ;
+    color:#9d7171 ;
     font-weight: bold;
     padding-bottom: 20px;
 }
 .viewbox{
-    color:#A39274 ;
+    color:#9d7171  ;
     font-size: 20px;
     padding: 10px;
+}
+.flower{
+    max-width: 1600px;
+    text-align: right;
+    position: fixed;
+    top: 300px;
+    left: 100%;
+    margin-left: -100px;
+    z-index: 30;
 }

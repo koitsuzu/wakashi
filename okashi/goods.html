@@ -38,7 +38,20 @@
             
         </ul>
     </nav>
-
+    <script>
+        function minus(){
+            var num=Number(document.getElementsByClassName('qty')[0].value);
+            if(num>1){
+                document.getElementsByClassName('qty')[0].value= num-1;
+            }
+        }
+        function add(){
+            var num=Number(document.getElementsByClassName('qty')[0].value);
+            if(num<100){
+                document.getElementsByClassName('qty')[0].value= num+1;
+            }
+        }
+    </script>
     <div class="main">
         <div class="g_img">
             <img src="https://picsum.photos/300/300" alt="">
@@ -47,20 +60,25 @@
             <h1>草莓大福</h1>
             <p class="prize">NT$45</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas pariatur laborum earum expedita? Quasi odio facilis, accusamus fugiat error ipsum sequi, molestiae exercitationem eius illum placeat, voluptas dignissimos excepturi similique.</p>
-            <p>賞味期限:冷藏5天</p>
+            <p>賞味期限:冷藏5天(18度C以下)</p>
             <div>
                 <form action="">
                     <div class="btn_set">
                         <div class="btn_font">
-                            <input type="button" value="-" class="btn">
+                            <input type="button" value="-" class="btn" onclick="minus()">
                             <input type="text" value="1" class="qty">
-                            <input type="button" value="+" class="btn">
+                            <input type="button" value="+" class="btn" onclick="add()">
                         </div>
                         <button type="submit" class="btn_cart" onclick="javascript:alert('加入購物車')">加入購物車</button>
                     </div>
                 </form>
             </div>
         </div>
+        <script>
+            function star(obj){
+              document.getElementById('star').value = obj.value;
+                       }
+        </script>
         <div class="g_write">
             <h1>商品評論</h1>
             <form action="">
@@ -100,6 +118,9 @@
                 <div>----------------------------------------------------</div>
             </div>
         </div>
+    </div>
+    <div class="flower">
+        <a href="cart.html"><img src="https://picsum.photos/100/100" alt=""></a>
     </div>
     <!-- 尾端 -->
     <footer>
