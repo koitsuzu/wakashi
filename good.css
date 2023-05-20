@@ -54,11 +54,12 @@ body{
 .btn_font{
     background-color: #de505d;
     margin: 0 10px 0 0 ;
+    padding-top: 10px;
 }
 .btn{
     width: 50px;
     background-color: #de505d;
-    font-size: 45px;
+    font-size: 30px;
     border: none;
     margin: 0;
     color: #fafafa;
@@ -68,7 +69,7 @@ body{
     margin: 0;
     width: 80px;
     background-color: #de505d;
-    font-size: 45px;
+    font-size: 30px;
     border: none;
     text-align: center;
     color: #fafafa;
@@ -80,6 +81,7 @@ body{
     border: none;
     padding: 13px 30px;
     margin: 0;
+    font-family: "秀風體W3";
 }
 .g_write{
     width: 450px;
@@ -104,18 +106,25 @@ body{
     border: 0;
     margin: 10px;
     background-color: #fafafa;
+    outline: none;
+    border: 0;
+    border-width: 1px;
 }
 .input_font2{
     width: 350px;
     height:150px;
     margin: 10px;
     background-color: #fafafa;
+    resize: none;
+    outline: none;
+    border: 0;
 }
 ::placeholder{
     color: black;
     letter-spacing: 2px;
     font-weight: bold;
     font-size: 20px;
+    font-family: "秀風體W3";
 }
 
 .rating {
