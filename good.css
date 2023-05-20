@@ -184,6 +184,10 @@
     font-size: 20px;
     padding: 10px;
 }
+@font-face {
+    font-family: "秀風體W3";
+    src: url(秀風體W3.ttc);
+}
 /* .flower{
     max-width: 1600px;
     text-align: right;
