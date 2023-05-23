@@ -2,230 +2,116 @@
     box-sizing: border-box;
     margin: 0px auto;
     max-width: 1600px;
-}
-
-
-
-body {
+  }
+  
+  @keyframes opac {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  body {
     margin: 0;
     padding: 0;
     background-color: #FAFAFA;
     font-family: "秀風體W3";
-
-}
-
-@font-face {
-    font-family: "秀風體W3";
-    src: url(秀風體W3.ttc);
-}
-
-.main {
-    max-width: 1600px;
-    background-color: #F2F0F0;
-    padding: 100px;
-    padding-bottom: 0px;
-    overflow: hidden;
-    position: relative;
-    margin-top: 20px;
-    padding-top: 120px;
-
-}
-
-
-/* 頁籤 */
-#tab {
-    width: auto;
-    display: inline-block;
-
-
-}
-
-#tab>ul {
-    margin: 0;
-    font-weight: bold;
-    margin-left: 0px;
-    margin-top: 40px;
-
-
-
-
-}
-
-#tab>ul>li {
-    list-style-type: none;
-
-}
-
-/* 頁籤上的文字 */
-#tab>ul>li>a {
+  
+  }
+  
+  .main {
+      max-width: 1600px;
+      background-color: #F2F0F0;
+      padding: 300px;
+      padding-bottom: 50px;
+      overflow: hidden;
+      position: relative;
+      margin-top: 20px;
+      padding-top: 120px;
+      height: max-content;
+      
+  
+  }
+  @font-face {
+      font-family: "秀風體W3";
+      src: url(秀風體W3.ttc);
+  } 
+  a {
     text-decoration: none;
-    font-size: 20px;
-    color: #ffffff;
-    writing-mode: vertical-lr
-}
-
-
-/*頁籤div內容*/
-#tab>div {
-    clear: both;
-    /* padding: 0 15px;*/
-    overflow: hidden;
-    visibility: hidden;
-    border-radius: 10px;
-    font-size: 20px;
-
-
-
-
-
-
-}
-
-/* 第一筆的底色 */
-span:target~#tab>ul li:first-child a {
-    background: #071553;
-    padding: 20px;
-    border-radius: 10px 0 0 10px;
-}
-
-span:target~#tab>div:first-of-type {
-    visibility: hidden;
-    height: 0;
-    padding: 0 15px;
-}
-
-/*頁籤變換&第一筆*/
-span~#tab>ul li:first-child a,
-#tab-1:target~#tab>ul li a[href$="#tab-1"],
-#tab-2:target~#tab>ul li a[href$="#tab-2"],
-#tab-3:target~#tab>ul li a[href$="#tab-3"] {
-    background: #7575A9;
-    border-radius: 10px 0 0 10px;
-    padding: 20px;
-}
-
-span~#tab>ul li:first-child a::before,
-#tab-1:target~#tab>ul li a[href$="#tab-1"]::before,
-#tab-2:target~#tab>ul li a[href$="#tab-2"]::before,
-#tab-3:target~#tab>ul li a[href$="#tab-3"]::before {
-    background-color: #424289;
-    height: 100%;
-}
-
-/*頁籤內容顯示&第一筆*/
-span~#tab>div:first-of-type,
-#tab-1:target~#tab>div.tab-content-1,
-#tab-2:target~#tab>div.tab-content-2,
-#tab-3:target~#tab>div.tab-content-3 {
-    visibility: visible;
-    height: auto;
-    background: #fff;
-    width: 950px;
-    height: 500px;
-
-}
-
-
-/* 第二筆的底色 */
-span:target~#tab>ul li:nth-child(2) a {
-    background: #071553;
-    padding: 20px;
-    border-radius: 10px 0 0 10px;
-
-}
-
-span:target~#tab>div:first-of-type {
-    visibility: hidden;
-    height: 0;
-    padding: 0 15px;
-
-}
-
-
-
-span {
+  }
+  
+  .megaTab .tabContent {
     display: none;
-}
-
-/* 經歷 */
-.array {
-    width: 960px;
-
-    display: flex;
-}
-
-.array_ctrl {
-    display: flex;
-    justify-content: left;
-}
-
-.ex {
-    padding: 10px;
-}
-
-.ex_img {
-    width: 100%;
-}
-
-.ex_txt {
-    margin: 0px 10px;
-}
-
-.work {
-    display: flex;
-}
-
-.people {
-    padding: 50px;
-    padding-bottom: 0;
-}
-
-.uniform {
-    padding: 50px;
-    padding-bottom: 0;
-}
-
-.work_txt {
-    padding-left: 50px;
-    padding-right: 50px;
-
-}
-
-/* 興趣 */
-.tab-content-2 {
-    margin-bottom: 50px;
-}
-
-.intresting {
-    display: flex;
-    flex-direction: row;
-    padding-top: 30px;
-
-}
-
-ul>li {
-    list-style-type: square;
-}
-
-.guitar {
-    border-radius: 10%;
-
-    padding-right: 100px;
-    padding-left: 100px;
-    width: 500px;
-}
-
-.pet {
-    border-radius: 50%;
-    padding: 10px;
-}
-
-.interesting_txt {
-    padding-left: 20px;
-    padding-right: 0px;
-}
-
-.list {
+    width: 800px;
+    float: left;
+    /* position: absolute;
+    left: 380px; */
+  }
+  
+  .megaTab .tabContent.open {
+    display: block;
+  }
+  ul li{
+    list-style-type: none;
+  }
+  
+  /* 內容大區塊 */
+  .tabContent {
+    display: none;
+    min-height: max-content;
+    float: left;
+    /* padding: 20px; */
+    background-color: #fafafa;
+    padding: 150px;
+    border-radius: 0 50px 50px 50px;
+  }
+  
+  .tabContent > * {
+    line-height: 20px;
+    padding: 150px;
+  }
+  
+  .tabContent.open {
+    display: block;
+  }
+  
+  .tabContent.fade {
+    animation: opac 0.8s;
+  }
+  
+  .nav--tabs:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* 標籤 */
+  .nav__item {
+    border-radius: 10px 0 0 10px;
+    margin-bottom: 3px;
+  }
+  .nav__item__title {
+    display: block;
+    padding: 5px;
+    width: 35px;
+    height: 100px;
     font-size: 20px;
-
-}
+    border: 1px solid transparent;
+  
+    color: #fafafa;
+  }
+  .nav__item__title.active {
+    border-right: none;
+  }
+  .nav--tabs--horizon {
+    width: 80px;
+    float: left;
+    padding-left: 5px;
+    margin-right: -1px;
+    margin-left: 3px;
+    padding-left: 35px;
+    position: relative;
+  }
+  
+  

@@ -95,69 +95,26 @@
         </div>
     </nav>
 
-    <!--會員資料-->
-    <section>
-        <div class=" main">
-        <span id="tab-1"></span>
-        <span id="tab-2"></span>
-        <span id="tab-3"></span>
+<div class="main">
+    <div class="megaTab">
+        <ul class="nav nav--tabs nav--tabs--horizon">
+          <li class="nav__item" style="background-color: #071533;">
+            <a class="nav__item__title megaTab-link active" href="#" onclick="openTab(event, 'A')">個人資料</a>
+          </li>
+          <li class="nav__item" style="background-color: #7575a9;">
+            <a class="nav__item__title megaTab-link " href="#" onclick="openTab(event, 'B')">訂單記錄</a>
+          </li>
+        </ul>
+
+        <div id="A" class="tabContent fade open">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate dolore praesentium quos tempora quidem beatae, assumenda nam voluptates omnis nisi rem placeat. Exercitationem facilis tempora possimus laboriosam odio magnam asperiores!
+        </div>
+        <div id="B" class="tabContent">
+            lskfhl;klsf;ldfhskldfhfa-spin
+        </div>
     
-    
-        <div id="tab">
-            <ul>
-                <li><a href="#tab-1">個人資料</a></li>
-                <li><a href="#tab-2">訂單紀錄</a></li>
-            </ul>
-            <div class="tab-content-1">
-                <div class="array_ctrl">
-                    <div class="array">
-                        
-                         <div class="ex">
-                            <div class="ex_img"><img src="image/beach.JPEG" alt=""></div>
-                            <p class="ex_txt">大一上的管理學課，和同學們一起去做淨灘活動，活動負責人說這是自發性活動，政府沒有任何補助，因為愛護環境，透過淨灘可以更有意識的在日常生活中有永續的概念。</p>
-                        </div>
-                        <div class="ex">
-                            <div class="ex_img"><img src="image/cookie.jpg" alt=""></div>
-                            <p class="ex_txt">大一下時跟同學們一起販賣雪Q餅，幫助公益團體販賣商品，學到很多網路販賣的技巧、進銷存管理、組員溝通協調，第一次經營網店，我負責跟廠商訂貨，跟廠商溝通，獲得很多經驗。</p>
-                        </div>
-                        <div class="ex">
-                            <div class="ex_img"><img src="image/web.png" alt=""></div>
-                            <p class="ex_txt">大二上跟甲班合作架設網站，真真切切感受到自己能力的不足，不正確資料庫的設計，導致最後網站不能當作販賣平台，讓我在寒假和下學期更努力進修自己的不足。</p>
-                        </div> 
-                    </div>
-                </div>
-            </div>
-
-            <div class="tab-content-2">
-        
-                    <div class="intresting">
-                        <div class="list">
-                             <ul>
-                                <li>彈吉他</li>
-                                <li>彈鋼琴</li>
-                                <li>看日本電影</li>
-                                <li>日本麻將</li>
-                                <li>自學日文</li>
-                                <li>養貓養狗</li>
-                            </ul> 
-                        </div>
-                        <div>
-                            <img class="guitar" src="image/guitar.jpg" alt="">
-                        </div>
-                        <div >
-                            <img class="pet" src="image/catdog.jpg" alt="">
-                        </div>
-                    </div>
-                    <!-- <div class="interesting_txt">
-                        <p>國中是吉他社，高中是熱音社，我發現我自己自學比參加社團還認真，大學就沒有參加任何社團，但我每天都彈琴、學日文、日本文化，很充實。</p>
-                    </div> -->
-
-            </div>
-
-    </section> 
-    
-
-
+    </div>
+</div>
     <!-- 尾端 -->
     <footer>
         <div class="footerr">
@@ -227,5 +184,23 @@
               document.getElementById('star').value = obj.value;
                        }
         </script>
+        <!-- 頁籤   -->
+        <script>
+            function openTab(event, tabName) {
+                var i, tabcontent, megaTablink;
+                tabcontent = document.querySelector(".megaTab").getElementsByClassName("tabContent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].className = tabcontent[i].className.replace(" open", "");
+                }
+                megaTablink = document.querySelector(".megaTab").getElementsByClassName("megaTab-link");
+                for (i = 0; i < megaTablink.length; i++) {
+                    megaTablink[i].className = megaTablink[i].className.replace(" active", "");
+                }
+                var tabName = document.getElementById(tabName);
+                tabName.className += " fade open";
+                event.target.className += " active";
+            }
+            
+        </script>
 </body>
-</html>
+</html> 
