@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員資料</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="member.css">
+    <link rel="icon" href="image/logo.ico" type="image/x-icon" />
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap');
+  </style>
+<body>
+     <!-- 頂端選單 -->
+     <nav class="navset">
+        <div class="search">
+            <form action="#" method="post">
+                <input type="text" name="" placeholder="Search...">
+            </form>
+            <div class="search1"><img src="image/search.png" alt=""></div>
+        </div> 
+        <ul>
+            <li><a href="brand.html">品牌介紹</a></li>
+            <li><a href="aboutus.html">關於我們</a></li>
+            <li><a href="index.html" name="#top"><img src="image/logo.png" alt=""></a></li>
+            <li>
+                <div class="dropdown">
+                    商品瀏覽    
+                    <div class="dropdown-content">
+                    <a href="yokan.html">羊羹</a>
+                    <a href="dango.html">大福/糰子</a>
+                    <a href="namagashi.html">上生菓子</a>
+                    <a href="wagashi.html">禮盒</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="member.jsp">會員資料</a></li>
+           
+                <div class="login"><a href="login.html">[登入]</a></div>
+            
+        </ul>
+        <!--購物車-->
+        <div class="flower">
+            <div id="car" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <div class="buy">
+                    <form action="" >
+                        <div class="good">
+                        <div class="numm">
+                            <img src="image/d1.jpg">
+                            <div>
+                                 <!--商品名稱-->
+                                <div class="nu1">  
+                                    <div>草莓大福</div>
+                                </div> NT$45
+                                <!--商品數量-->
+                                <div class="nu2"> 
+                                    <input type="button" value="-" class="btn" onclick="minus(0)">
+                            <input type="text" id="number" value="1" class="qty">
+                            <input type="button" value="+" class="btn" onclick="add(0)">
+                                </div>
+                            </div>
+                            
+                            <div class="x">×</div> 
+                        </div>
+                        <div class="numm">
+                            <img src="image/d4.jpg">
+                            <div>
+                                 <!--商品名稱-->
+                                <div class="nu1">  
+                                    <div>西西里大福</div>
+                                </div>NT$45
+                                <!--商品數量-->
+                                <div class="nu2"> 
+                                    <input type="button" value="-" class="btn" onclick="minus(1)">
+                            <input type="text" id="number" value="1" class="qty">
+                            <input type="button" value="+" class="btn" onclick="add(1)">
+                                </div>
+                            </div>
+                            <div class="x">×</div>  
+                        </div>
+                        </div>
+                        <!-- 總金額-->
+                        <div class="total">
+                            <p class="r"> 總金額  $90</p>
+                        <div class="but"> 結帳
+                        </div>
+                    </div>
+                    </form>
+                </div>
+              </div>
+                <div id="main" onclick="openNav()"><img src="image/car.png" alt="" onmouseover="this.src='image/bag.png';" onmouseout="this.src=' image/car.png';" class="openbtn"></div>  
+        </div>
+    </nav>
+
+    <!--會員資料-->
+    <section>
+        <div class=" main">
+        <span id="tab-1"></span>
+        <span id="tab-2"></span>
+        <span id="tab-3"></span>
+    
+    
+        <div id="tab">
+            <ul>
+                <li><a href="#tab-1">個人資料</a></li>
+                <li><a href="#tab-2">訂單紀錄</a></li>
+            </ul>
+            <div class="tab-content-1">
+                <div class="array_ctrl">
+                    <div class="array">
+                        
+                         <div class="ex">
+                            <div class="ex_img"><img src="image/beach.JPEG" alt=""></div>
+                            <p class="ex_txt">大一上的管理學課，和同學們一起去做淨灘活動，活動負責人說這是自發性活動，政府沒有任何補助，因為愛護環境，透過淨灘可以更有意識的在日常生活中有永續的概念。</p>
+                        </div>
+                        <div class="ex">
+                            <div class="ex_img"><img src="image/cookie.jpg" alt=""></div>
+                            <p class="ex_txt">大一下時跟同學們一起販賣雪Q餅，幫助公益團體販賣商品，學到很多網路販賣的技巧、進銷存管理、組員溝通協調，第一次經營網店，我負責跟廠商訂貨，跟廠商溝通，獲得很多經驗。</p>
+                        </div>
+                        <div class="ex">
+                            <div class="ex_img"><img src="image/web.png" alt=""></div>
+                            <p class="ex_txt">大二上跟甲班合作架設網站，真真切切感受到自己能力的不足，不正確資料庫的設計，導致最後網站不能當作販賣平台，讓我在寒假和下學期更努力進修自己的不足。</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content-2">
+        
+                    <div class="intresting">
+                        <div class="list">
+                             <ul>
+                                <li>彈吉他</li>
+                                <li>彈鋼琴</li>
+                                <li>看日本電影</li>
+                                <li>日本麻將</li>
+                                <li>自學日文</li>
+                                <li>養貓養狗</li>
+                            </ul> 
+                        </div>
+                        <div>
+                            <img class="guitar" src="image/guitar.jpg" alt="">
+                        </div>
+                        <div >
+                            <img class="pet" src="image/catdog.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- <div class="interesting_txt">
+                        <p>國中是吉他社，高中是熱音社，我發現我自己自學比參加社團還認真，大學就沒有參加任何社團，但我每天都彈琴、學日文、日本文化，很充實。</p>
+                    </div> -->
+
+            </div>
+
+    </section> 
+    
+
+
+    <!-- 尾端 -->
+    <footer>
+        <div class="footerr">
+           <section class="f1">
+               <div class="chinmi">❃ 饈菓子CHINMI </div>
+               <div class="slogan">甘い幸福の一口。和菓子、<br>あなたの心を癒します。</div>
+               <div class="address">地址:桃園市中壢區中北路200號</div>
+           </section>
+           <section class="f2">
+               <div class="time">TEL:03-265-9999<br>
+                   營業時間：9:00〜18:00<br>
+                   公休日：週一・週二<br>
+                   <hr>
+                   
+                   <a href="https://www.facebook.com/CYCU.PR/?locale=zh_TW"><img src="image/fb.png"></a>
+                   <a href="https://www.instagram.com/cycusa/"><img src="image/ig.png"></a>
+                   <a href="mailto:8973088@gmail.com"><img src="image/em.png"></a>
+                   
+                   </div>
+               <div class="copy">訪客人數:100人<br>Copyright © 2023 Chinmi  All Rights.</div>
+           </section>
+           <section>
+               <img src="image/bobo.png" class="bobo">
+               <div class="f3"><a href="#top" class="f3">page<br>top</a></div>
+           </section>
+        </div>
+        <div class="foot">
+        <div class="scroll">
+           <div class="text">
+           ❃ CHINMI  ❃ CHINMI  ❃CHINMI  ❃CHINMI  ❃CHINMI  ❃CHINMI  ❃CHINMI  ❃CHINMI    ❃CHINMI  ❃CHINMI  ❃CHINMI  ❃CHINMI  
+           </div>
+           <div class="text">
+           ❃  CHINMI  ❃ CHINMI  ❃CHINMI  ❃CHINMI  ❃CHINMI  ❃CHINMI  ❃CHINMI  ❃CHINMI  ❃CHINMI  ❃CHINMI  ❃CHINMI  ❃CHINMI     
+           </div>
+         </div>
+       </div>
+    </footer>
+
+    <script>
+        function openNav() {
+          document.getElementById("car").style.width = "400px";
+          document.getElementById("main").style.marginLeft = "0px";
+        }
+        
+        function closeNav() {
+          document.getElementById("car").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0px";
+        }
+        </script>
+           
+           <script>
+            function minus(number){
+                var num=Number(document.getElementsByClassName('qty')[number].value);
+                if(num>1){
+                    document.getElementsByClassName('qty')[number].value= num-1;
+                }
+            }
+            function add(number){
+                var num=Number(document.getElementsByClassName('qty')[number].value);
+                if(num<100){
+                    document.getElementsByClassName('qty')[number].value= num+1;
+                }
+            }
+        </script>
+        <script>
+            function star(obj){
+              document.getElementById('star').value = obj.value;
+                       }
+        </script>
+</body>
+</html>
