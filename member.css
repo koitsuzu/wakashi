@@ -2,109 +2,169 @@
     box-sizing: border-box;
     margin: 0px auto;
     max-width: 1600px;
-  }
-  
-  @keyframes opac {
+}
+
+@keyframes opac {
     from {
-      opacity: 0;
+        opacity: 0;
     }
+
     to {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  
-  body {
+}
+
+body {
     margin: 0;
     padding: 0;
     background-color: #FAFAFA;
     font-family: "秀風體W3";
-  
-  }
-  
-  .main {
-      max-width: 1600px;
-      background-color: #F2F0F0;
-      padding: 300px;
-      padding-bottom: 50px;
-      overflow: hidden;
-      position: relative;
-      margin-top: 20px;
-      padding-top: 120px;
-      height: max-content;
-      
-  
-  }
-  @font-face {
-      font-family: "秀風體W3";
-      src: url(秀風體W3.ttc);
-  } 
-  a {
+
+}
+
+.main {
+    max-width: 1600px;
+    background-color: #F2F0F0;
+    padding: 300px;
+    padding-bottom: 50px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+    padding-top: 120px;
+    height: max-content;
+
+
+}
+
+@font-face {
+    font-family: "秀風體W3";
+    src: url(秀風體W3.ttc);
+}
+
+a {
     text-decoration: none;
-  }
-  
-  .megaTab .tabContent {
+}
+
+.megaTab .tabContent {
     display: none;
     width: 800px;
     float: left;
-    /* position: absolute;
-    left: 380px; */
-  }
-  
-  .megaTab .tabContent.open {
+
+}
+
+.megaTab .tabContent.open {
     display: block;
-  }
-  ul li{
+}
+
+.megaTab ul {
+    margin-top: 60px;
+}
+
+
+ul li {
     list-style-type: none;
-  }
-  
-  /* 內容大區塊 */
-  .tabContent {
+}
+
+/* 內容大區塊 */
+.tabContent {
     display: none;
-    min-height: max-content;
+    height: max-content;
     float: left;
     /* padding: 20px; */
-    background-color: #fafafa;
-    padding: 150px;
-    border-radius: 0 50px 50px 50px;
-  }
-  
-  .tabContent > * {
-    line-height: 20px;
-    padding: 150px;
-  }
-  
-  .tabContent.open {
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+
+
+.content1 {
+    width: 680px;
+    padding: 60px;
+    font-size: 25px;
+    line-height: 60px;
+    color: #3f4146;
+    margin-bottom: -15px;
+}
+
+.revirse {
+    margin: 335px;
+    font-size: 25px;
+    color: #ffffff;
+    background-color: #7575A9;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+.revirse:hover {
+    background-color: #3f4146;
+}
+
+.c1>td {
+    border-bottom-style: dashed;
+    border-color: #7575A9;
+    border-width: 2px;
+
+}
+
+.tabContent.open {
     display: block;
-  }
-  
-  .tabContent.fade {
-    animation: opac 0.8s;
-  }
-  
-  .nav--tabs:after {
+    padding-bottom: 40px;
+}
+
+/*訂單紀錄*/
+.content2 {
+    border-collapse: collapse;
+}
+
+.c2 td {
+    border-bottom: 3px solid #7575A9;
+    border-collapse: collapse;
+    border: 1px solid rgb(162, 116, 116);
+
+}
+
+td>img {
+    width: 100px;
+    height: 100px;
+}
+
+.content2 {
+    font-size: 20px;
+    text-align: center;
+    margin: 80px 50px 80px 50px;
+}
+
+
+
+
+
+.nav--tabs:after {
     content: "";
     display: table;
     clear: both;
-  }
-  /* 標籤 */
-  .nav__item {
+}
+
+/* 標籤 */
+.nav__item {
     border-radius: 10px 0 0 10px;
-    margin-bottom: 3px;
-  }
-  .nav__item__title {
+    margin-bottom: 8px;
+}
+
+.nav__item__title {
     display: block;
     padding: 5px;
     width: 35px;
     height: 100px;
     font-size: 20px;
     border: 1px solid transparent;
-  
     color: #fafafa;
-  }
-  .nav__item__title.active {
+}
+
+.nav__item__title.active {
     border-right: none;
-  }
-  .nav--tabs--horizon {
+}
+
+.nav--tabs--horizon {
     width: 80px;
     float: left;
     padding-left: 5px;
@@ -112,6 +172,18 @@
     margin-left: 3px;
     padding-left: 35px;
     position: relative;
-  }
-  
-  
+}
+
+.nav__item {
+    background-color: #071533;
+}
+
+.nav__item a:focus {
+    background-color: #7575A9;
+    border-radius: 10px 0 0 10px;
+    margin-bottom: 3px;
+    font-size: 20px;
+    border: 1px solid transparent;
+    width: 45px;
+    padding-left: 10px;
+}
