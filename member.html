@@ -36,7 +36,7 @@
                     </div>
                 </div>
             </li>
-            <li><a href="member.jsp">會員資料</a></li>
+            <li><a href="member.html">會員資料</a></li>
            
                 <div class="login"><a href="login.html">[登入]</a></div>
             
@@ -98,19 +98,60 @@
 <div class="main">
     <div class="megaTab">
         <ul class="nav nav--tabs nav--tabs--horizon">
-          <li class="nav__item" style="background-color: #071533;">
-            <a class="nav__item__title megaTab-link active" href="#" onclick="openTab(event, 'A')">個人資料</a>
+          <li class="nav__item">
+            <a class="nav__item__title megaTab-link active" href="#" onclick="openTab(event, 'A')" tabindex="1">個人資料</a>
           </li>
-          <li class="nav__item" style="background-color: #7575a9;">
-            <a class="nav__item__title megaTab-link " href="#" onclick="openTab(event, 'B')">訂單記錄</a>
+          <li class="nav__item">
+            <a class="nav__item__title megaTab-link " href="#" onclick="openTab(event, 'B')" tabindex="1">訂單記錄</a>
           </li>
         </ul>
-
-        <div id="A" class="tabContent fade open">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate dolore praesentium quos tempora quidem beatae, assumenda nam voluptates omnis nisi rem placeat. Exercitationem facilis tempora possimus laboriosam odio magnam asperiores!
+        
+        <div id="A" class="tabContent open">
+                <table class="content1">
+                    <tr class="c1">
+                      <td colspan="2" >姓名:章魚哥</td>
+                    </tr>
+                    <tr class="c1">
+                      <td>帳號:112@556322</td>
+                      <td>密碼:6626595</td>
+                    </tr>
+                    <tr class="c1">
+                      <td>電話:7896543</td>
+                      <td>生日:2003/9/9</td>
+                    </tr>
+                     <tr class="c1">
+                      <td colspan="2">地址:台北市松山區南京東路四段2號</td>
+                    </tr>
+                  </table> 
+            <a href="revise.html" class="revirse">修改資料</a>
         </div>
         <div id="B" class="tabContent">
-            lskfhl;klsf;ldfhskldfhfa-spin
+            <table class="content2" >
+                <tr class="c2">
+                    <td colspan="2"  >商品</td>
+                    <td>單價</td>
+                    <td>數量(個)</td>
+                    <td>總價</td>
+                    <td>評論</td>
+                  </tr>
+                <tr  class="c2">
+                  <td><img src="image/d4.jpg"></td>
+                  <td>西西里大福</td>
+                  <td>NT$45</td>
+                  <td>5</td>
+                  <td>NT$225</td>
+                  <td>西西里東東里從我這裡到你那裡</td>
+                </tr>
+                <tr class="c2">
+                    <td><img src="image/y5.jpg"></td>
+                    <td>想我了莓</td>
+                    <td>NT$80</td>
+                    <td>3</td>
+                    <td>NT$240</td>
+                    <td>草莓好好吃</td>
+                  </tr>
+                </table> 
+              </table> 
         </div>
     
     </div>
@@ -197,7 +238,7 @@
                     megaTablink[i].className = megaTablink[i].className.replace(" active", "");
                 }
                 var tabName = document.getElementById(tabName);
-                tabName.className += " fade open";
+                tabName.className += " open";
                 event.target.className += " active";
             }
             
