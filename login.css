@@ -60,12 +60,13 @@ body {
 ::placeholder {
     color: #A39274;
     font-weight: bold;
-    font-size: 13px;
-
+    font-size: 15px;
+    font-family: "秀風體W3";
 }
 
 .buttonlook {
     padding: 10px;
+    font-family: "秀風體W3";
 }
 
 .buttonlook input {
@@ -82,6 +83,7 @@ body {
 
 .register {
     margin: 20px;
+    font-family: "秀風體W3";
 }
 
 .register a {
@@ -89,6 +91,7 @@ body {
     list-style: none;
     text-decoration: none;
     margin: 20px;
+    font-family: "秀風體W3";
 }
 
 .left_rabbit img {
