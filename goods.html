@@ -96,16 +96,16 @@
     </nav>
     <!--頁面內容-->
     <script>
-        function minus(){
-            var num=Number(document.getElementsByClassName('qty')[0].value);
+        function minus1(){
+            var num=Number(document.getElementsByClassName('qtyy')[0].value);
             if(num>1){
-                document.getElementsByClassName('qty')[0].value= num-1;
+                document.getElementsByClassName('qtyy')[0].value= num-1;
             }
         }
-        function add(){
-            var num=Number(document.getElementsByClassName('qty')[0].value);
+        function add1(){
+            var num=Number(document.getElementsByClassName('qtyy')[0].value);
             if(num<100){
-                document.getElementsByClassName('qty')[0].value= num+1;
+                document.getElementsByClassName('qtyy')[0].value= num+1;
             }
         }
     </script>
@@ -122,9 +122,9 @@
                 <form action="">
                     <div class="btn_set">
                         <div class="btn_font">
-                            <input type="button" value="-" class="btn" onclick="minus()">
-                            <input type="text" value="1" class="qty">
-                            <input type="button" value="+" class="btn" onclick="add()">
+                            <input type="button" value="-" class="btn" onclick="minus1(0)">
+                            <input type="text" value="1" class="qtyy">
+                            <input type="button" value="+" class="btn" onclick="add1(0)">
                         </div>
                         <button type="submit" class="btn_cart" onclick="javascript:alert('加入購物車')">加入購物車</button>
                     </div>
