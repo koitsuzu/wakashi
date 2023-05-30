@@ -3,7 +3,7 @@ body{
 }
 @font-face {
     font-family: "秀風體W3";
-    src: url(assets/秀風體W3.ttc);
+    src: url(秀風體W3.ttc);
 }
 .main{
     margin-top: 10%;
