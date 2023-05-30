@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>禮盒</title>
-    <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="namagashi.css">
+    <link rel="stylesheet" href="assets/nav.css">
+    <link rel="stylesheet" href="assets/namagashi.css">
     <link rel="icon" href="image/logo.ico" type="image/x-icon" />
 </head>
 
@@ -38,10 +38,8 @@
                     </div>
                 </div>
             </li>
-            <li><a href="member.jsp">會員資料</a></li>
-           
-                <div class="login"><a href="login.html">[登入]</a></div>
-            
+            <li><a href="member.html">會員資料</a></li>
+            <div class="login"><a href="login.html">[登入]</a></div>  
         </ul>
         <!--購物車-->
         <div class="flower">
@@ -50,52 +48,51 @@
                 <div class="buy">
                     <form action="" >
                         <div class="good">
-                        <div class="numm">
-                            <img src="image/d1.jpg">
-                            <div>
-                                 <!--商品名稱-->
-                                <div class="nu1">  
-                                    <div>草莓大福</div>
-                                </div> NT$45
-                                <!--商品數量-->
-                                <div class="nu2"> 
-                                    <input type="button" value="-" class="btn" onclick="minus(0)">
-                            <input type="text" id="number" value="1" class="qty">
-                            <input type="button" value="+" class="btn" onclick="add(0)">
+                            <div class="numm">
+                                <img src="image/d1.jpg">
+                                <div>
+                                    <!--商品名稱-->
+                                    <div class="nu1">  
+                                        <div>草莓大福</div>
+                                        </div> NT$45
+                                    <!--商品數量-->
+                                    <div class="nu2"> 
+                                        <input type="button" value="-" class="btn" onclick="minus(0)">
+                                        <input type="text" id="number" value="1" class="qty">
+                                        <input type="button" value="+" class="btn" onclick="add(0)">
+                                    </div>
                                 </div>
+                                <div class="x">×</div> 
                             </div>
-                            
-                            <div class="x">×</div> 
-                        </div>
-                        <div class="numm">
-                            <img src="image/d4.jpg">
-                            <div>
-                                 <!--商品名稱-->
-                                <div class="nu1">  
-                                    <div>西西里大福</div>
-                                </div>NT$45
-                                <!--商品數量-->
-                                <div class="nu2"> 
-                                    <input type="button" value="-" class="btn" onclick="minus(1)">
-                            <input type="text" id="number" value="1" class="qty">
-                            <input type="button" value="+" class="btn" onclick="add(1)">
+                            <div class="numm">
+                                <img src="image/d4.jpg">
+                                <div>
+                                    <!--商品名稱-->
+                                    <div class="nu1">  
+                                        <div>西西里大福</div>
+                                         </div>NT$45
+                                    <!--商品數量-->
+                                    <div class="nu2"> 
+                                        <input type="button" value="-" class="btn" onclick="minus(1)">
+                                        <input type="text" id="number" value="1" class="qty">
+                                        <input type="button" value="+" class="btn" onclick="add(1)">
+                                    </div>
                                 </div>
+                                <div class="x">×</div>  
                             </div>
-                            <div class="x">×</div>  
-                        </div>
                         </div>
                         <!-- 總金額-->
                         <div class="total">
                             <p class="r"> 總金額  $90</p>
-                        <div class="but"> 結帳
+                            <div class="but"><a href="pay.html" > 結帳</a></div>
                         </div>
-                    </div>
                     </form>
                 </div>
-              </div>
-                <div id="main" onclick="openNav()"><img src="image/car.png" alt="" onmouseover="this.src='image/bag.png';" onmouseout="this.src=' image/car.png';" class="openbtn"></div>  
+             </div>
+             <div id="main" onclick="openNav()"><img src="image/car.png" alt="" onmouseover="this.src='image/bag.png';" onmouseout="this.src=' image/car.png';" class="openbtn"></div>  
         </div>
     </nav>
+    <!--頁面內容-->
     <section>
         <img src="image/wagashi.png" class="head">
         <div class="shape-ex2">わがし<br><font size="100">-wagashi-</font></div>
