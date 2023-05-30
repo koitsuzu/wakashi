@@ -27,7 +27,7 @@ body {
 
 .main form {
     text-align: center;
-    width: 800px;
+    width: 730px;
     height: 66%;
     background-color: #fafafa;
     padding: 50px 100px;
@@ -55,18 +55,18 @@ body {
     outline-color: #A39274;
     border: 0;
 
+
 }
 
 ::placeholder {
     color: #A39274;
     font-weight: bold;
-    font-size: 15px;
-    font-family: "秀風體W3";
+    font-size: 13px;
+
 }
 
 .buttonlook {
     padding: 10px;
-    font-family: "秀風體W3";
 }
 
 .buttonlook input {
@@ -79,11 +79,11 @@ body {
     font-size: 25px;
     font-weight: bold;
     cursor: pointer;
+    font-family: "秀風體W3";
 }
 
 .register {
     margin: 20px;
-    font-family: "秀風體W3";
 }
 
 .register a {
@@ -91,7 +91,6 @@ body {
     list-style: none;
     text-decoration: none;
     margin: 20px;
-    font-family: "秀風體W3";
 }
 
 .left_rabbit img {
