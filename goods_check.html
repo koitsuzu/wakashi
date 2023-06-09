@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>訂單確認</title>
+    <link rel="stylesheet" href="assets/nav.css">
+    <link rel="stylesheet" href="assets/goods_check.css">
+    <link rel="icon" href="image/logo.ico" type="image/x-icon" />
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap');
+  </style>
+<body>
+     <!-- 頂端選單 -->
+    <nav class="navset">
+        <div class="search">
+            <form action="#" method="post">
+                <input type="text" name="" placeholder="Search...">
+            </form>
+            <div class="search1"><img src="image/search.png" alt=""></div>
+        </div> 
+        <ul>
+            <li><a href="brand.html">品牌介紹</a></li>
+            <li><a href="aboutus.html">關於我們</a></li>
+            <li><a href="index.html"><img src="image/logo.png" alt=""></a></li>
+            <li>
+                <div class="dropdown">
+                    商品瀏覽
+                    <div class="dropdown-content">
+                    <a href="yokan.html">羊羹</a>
+                    <a href="dango.html">大福/糰子</a>
+                    <a href="namagashi.html">上生菓子</a>
+                    <a href="wagashi.html">禮盒</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="manage.html">後台管理</a></li>
+            <div class="login"><a href="login.html">[登入]</a></div>  
+        </ul>
+        <!--購物車-->
+        <div class="flower">
+            <div id="car" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <div class="buy">
+                    <form action="" >
+                        <div class="good">
+                            <div class="numm">
+                                <img src="image/d1.jpg">
+                                <div>
+                                    <!--商品名稱-->
+                                    <div class="nu1">  
+                                        <div>草莓大福</div>
+                                        </div> NT$45
+                                    <!--商品數量-->
+                                    <div class="nu2"> 
+                                        <input type="button" value="-" class="btn" onclick="minus(0)">
+                                        <input type="text" id="number" value="1" class="qty">
+                                        <input type="button" value="+" class="btn" onclick="add(0)">
+                                    </div>
+                                </div>
+                                <div class="x">×</div> 
+                            </div>
+                            <div class="numm">
+                                <img src="image/d4.jpg">
+                                <div>
+                                    <!--商品名稱-->
+                                    <div class="nu1">  
+                                        <div>西西里大福</div>
+                                         </div>NT$45
+                                    <!--商品數量-->
+                                    <div class="nu2"> 
+                                        <input type="button" value="-" class="btn" onclick="minus(1)">
+                                        <input type="text" id="number" value="1" class="qty">
+                                        <input type="button" value="+" class="btn" onclick="add(1)">
+                                    </div>
+                                </div>
+                                <div class="x">×</div>  
+                            </div>
+                        </div>
+                        <!-- 總金額-->
+                        <div class="total">
+                            <p class="r"> 總金額  $90</p>
+                            <div class="but"><a href="pay.html" > 結帳</a></div>
+                        </div>
+                    </form>
+                </div>
+             </div>
+             <div id="main" onclick="openNav()"><img src="image/car.png" alt="" onmouseover="this.src='image/bag.png';" onmouseout="this.src=' image/car.png';" class="openbtn"></div>  
+        </div>
+    </nav>
+    <!--頁面內容-->
+
+    <article class="main">
+        <div class="information">
+            <form action="">
+                <section>
+                    <div class="p_title">----------------訂單資訊----------------</div>
+                    <div class="show">
+                        <div class="s1">訂單商品</div>
+                        <div class="s2">單價</div>
+                        <div class="s3">數量</div>
+                        <div class="s4">總價</div>
+                    </div>
+                    <div class="show_more">
+                        <div class="sm1"><img src="image/d1.jpg" alt=""></div>
+                        <div class="sm1_1">草莓大福</div>
+                        <div class="sm2">NT$45</div>
+                        <div class="sm3">2</div>
+                        <div class="sm4">NT$90</div>
+                    </div>
+                    <div class="show_more">
+                        <div class="sm1"><img src="image/d4.jpg" alt=""></div>
+                        <div class="sm1_1">西西里大福</div>
+                        <div class="sm2">NT$45</div>
+                        <div class="sm3">10</div>
+                        <div class="sm4">NT$450</div>
+                    </div>    
+                    <div class="p_line">---------------------------------------------------------------------------</div>
+                    <div class="p_count">訂單金額:<font color="#de505d" font-weight="bold">$540</font></div>                
+                </section>
+
+                <section class="p_img">
+                    <div  class="p_title">----------------取貨資料----------------</div>
+                    <div class="fillin">
+                        <div class="fill1">姓名:林宥嘉<br></div>
+                        <div class="fill2">商品編號:01<br></div>
+                        <div class="fill2_2">
+                            付款方式:貨到付款<br>
+                        </div>
+                        <div class="fill3">
+                           電話:5500 <br>
+                        </div>
+                        <div class="fill3_2"> 
+                            取貨方式:宅配<br>
+                        </div>
+                        <div class="fill4">地址:中原大學<br></div>
+                        <div class="fill5">備註:巴拉巴拉<br></div> 
+                    </div>
+                    <div class="payit">
+                        <button type="submit"><a href="manage.html">返回後台</a></button>
+                    </div>
+                    <div class="pay_img">
+                        <img src="image/checkout.png" alt="">
+                    </div>
+                </section>        
+            </form>
+        </div>               
+       
+                    
+                
+    </article>
+    <!-- 尾端 -->
+    <footer>
+        <div class="footerr">
+           <section class="f1">
+               <div class="chinmi">❃ 饈菓子CHINMI </div>
+               <div class="slogan">甘い幸福の一口。和菓子、<br>あなたの心を癒します。</div>
+               <div class="address">地址:桃園市中壢區中北路200號</div>
+           </section>
+           <section class="f2">
+               <div class="time">TEL:03-265-9999<br>
+                   營業時間：9:00〜18:00<br>
+                   公休日：週一・週二<br>
+                   <hr>
+                   
+                   <a href="https://www.facebook.com/CYCU.PR/?locale=zh_TW"><img src="image/fb.png"></a>
+                   <a href="https://www.instagram.com/cycusa/"><img src="image/ig.png"></a>
+                   <a href="mailto:8973088@gmail.com"><img src="image/em.png"></a>
+                   
+                   </div>
+               <div class="copy">訪客人數:100人<br>Copyright © 2023 Chinmi  All Rights.</div>
+           </section>
+           <section>
+               <img src="image/bobo.png" class="bobo">
+               <div class="f3"><a href="#top" class="f3">page<br>top</a></div>
+           </section>
+        </div>
+        <div class="foot">
+        <div class="scroll">
+           <div class="text">
+           ❃ CHINMI  ❃ CHINMI  ❃CHINMI  ❃CHINMI  ❃CHINMI  ❃CHINMI  ❃CHINMI  ❃CHINMI    ❃CHINMI  ❃CHINMI  ❃CHINMI  ❃CHINMI  
+           </div>
+           <div class="text">
+           ❃  CHINMI  ❃ CHINMI  ❃CHINMI  ❃CHINMI  ❃CHINMI  ❃CHINMI  ❃CHINMI  ❃CHINMI  ❃CHINMI  ❃CHINMI  ❃CHINMI  ❃CHINMI     
+           </div>
+         </div>
+       </div>
+    </footer>
+
+    <script>
+        function openNav() {
+          document.getElementById("car").style.width = "400px";
+          document.getElementById("main").style.marginLeft = "0px";
+        }
+        
+        function closeNav() {
+          document.getElementById("car").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0px";
+        }
+        </script>
+           
+           <script>
+            function minus(number){
+                var num=Number(document.getElementsByClassName('qty')[number].value);
+                if(num>1){
+                    document.getElementsByClassName('qty')[number].value= num-1;
+                }
+            }
+            function add(number){
+                var num=Number(document.getElementsByClassName('qty')[number].value);
+                if(num<100){
+                    document.getElementsByClassName('qty')[number].value= num+1;
+                }
+            }
+        </script>
+        <script>
+            function ship(obj){
+              document.getElementById('ship').value = obj.value;
+                       }
+        </script>
+</body>
+</html>
