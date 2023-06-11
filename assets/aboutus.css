@@ -90,6 +90,28 @@ h1 {
     z-index: 1;
 }
 
+.img1:hover img {
+    animation: shake 2s infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-10px);
+    }
+
+    75% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
 .name1 {
     position: relative;
     top: 120px;
@@ -141,6 +163,9 @@ h1 {
     right: 130px;
     top: -60px;
     z-index: 1;
+}
+.img2:hover img {
+    animation: shake 2s infinite;
 }
 
 
@@ -195,7 +220,9 @@ h1 {
     padding-left: 50px;
 
     z-index: 1;
-
+}
+.img3:hover img {
+    animation: shake 2s infinite;
 }
 
 .bg3 {
@@ -257,8 +284,10 @@ h1 {
     margin-top: 0px;
     padding-top: 0px;
     padding-left: 140px;
-
     z-index: 1;
+}
+.img4:hover img {
+    animation: shake 2s infinite;
 }
 
 .name4 {
@@ -304,6 +333,9 @@ h1 {
     right: 260px;
     top: -90px;
     z-index: 1;
+}
+.img5:hover img {
+    animation: shake 2s infinite;
 }
 
 
@@ -356,9 +388,10 @@ h1 {
 
     padding-top: 30px;
     padding-left: 100px;
-
     z-index: 1;
-
+}
+.img6:hover img {
+    animation: shake 2s infinite;
 }
 
 .bg6 {
