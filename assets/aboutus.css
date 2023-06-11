@@ -90,6 +90,11 @@ h1 {
     z-index: 1;
 }
 
+.name1 {
+    position: relative;
+    top: 120px;
+}
+
 .img1:hover img {
     animation: shake 2s infinite;
 }
@@ -111,12 +116,6 @@ h1 {
         transform: translateX(0);
     }
 }
-
-.name1 {
-    position: relative;
-    top: 120px;
-}
-
 
 
 .name1:hover::before {
@@ -164,6 +163,7 @@ h1 {
     top: -60px;
     z-index: 1;
 }
+
 .img2:hover img {
     animation: shake 2s infinite;
 }
@@ -220,7 +220,9 @@ h1 {
     padding-left: 50px;
 
     z-index: 1;
+
 }
+
 .img3:hover img {
     animation: shake 2s infinite;
 }
@@ -284,8 +286,10 @@ h1 {
     margin-top: 0px;
     padding-top: 0px;
     padding-left: 140px;
+
     z-index: 1;
 }
+
 .img4:hover img {
     animation: shake 2s infinite;
 }
@@ -334,6 +338,7 @@ h1 {
     top: -90px;
     z-index: 1;
 }
+
 .img5:hover img {
     animation: shake 2s infinite;
 }
@@ -388,8 +393,11 @@ h1 {
 
     padding-top: 30px;
     padding-left: 100px;
+
     z-index: 1;
+
 }
+
 .img6:hover img {
     animation: shake 2s infinite;
 }
